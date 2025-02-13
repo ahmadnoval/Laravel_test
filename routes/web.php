@@ -29,3 +29,5 @@ Route::get('/edit/{id}', [UserController::class, 'loadEditForm']);
 Route::get('/delete/{id}', [UserController::class, 'deleteUser']);
 
 Route::post('/edit/user',[UserController::class, "EditUser"])->name('EditUser');
+
+Route::post('/logout',[LoginController::class, "logout"])->name('logout');

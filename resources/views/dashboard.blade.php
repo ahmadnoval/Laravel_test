@@ -22,15 +22,12 @@
                     <p id="logged-in-users">{{ $logged_in_users }}</p>
                 </div>
             </div>
+
+            <form action="{{ route('logout') }}" method="post">
+                @csrf
+                <button type="submit" class="btn btn-danger">Logout</button>
+            </form>
         </div>
     </div>
 </body>
-<script>
-        fetch('/dashboard')
-            .then(response => response.json())
-            .then(data => {
-                document.getElementById('total-users').innerText = data.total_users;
-                document.getElementById('logged-in-users').innerText = data.logged_in_users;
-            });
-    </script>
 </html>
