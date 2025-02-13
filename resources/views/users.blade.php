@@ -47,7 +47,7 @@
                             @foreach ($all_users as $item)
                             <tr>
                                 <td>{{$loop->iteration}}</td>
-                                <td>{{$item->name}}</td>
+                                <td>{{$item->fullname}}</td>
                                 <td>{{$item->email}}</td>
                                 <td><a href="/edit/{{$item->id}}" class="btn btn-primary btn-sm">Edit</a></td>
                                 <td><a href="/delete/{{$item->id}}" class="btn btn-danger btn-sm">Delete</a></td>

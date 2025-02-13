@@ -19,8 +19,8 @@
                     @csrf
                     <div class="mb-3">
                         <label for="formGroupExampleInput" class="form-label">FullName</label>
-                        <input type="text" name="full_name" class="form-control" id="formGroupExampleInput" placeholder="Enter Full Name">
-                        @error('full_name')
+                        <input type="text" name="fullname" class="form-control" id="formGroupExampleInput" placeholder="Enter Full Name">
+                        @error('fullname')
                             <span class="text-danger">{{$message}}</span>
                         @enderror
                     </div>

@@ -20,8 +20,8 @@
                     <input type="hidden" name="user_id" id="" value="{{$user->id}}">
                     <div class="mb-3">
                         <label for="formGroupExampleInput" class="form-label">FullName</label>
-                        <input type="text" name="full_name" value="{{$user->name}}" class="form-control" id="formGroupExampleInput" placeholder="Enter Full Name">
-                        @error('full_name')
+                        <input type="text" name="fullname" value="{{$user->name}}" class="form-control" id="formGroupExampleInput" placeholder="Enter Full Name">
+                        @error('fullname')
                             <span class="text-danger">{{$message}}</span>
                         @enderror
                     </div>
